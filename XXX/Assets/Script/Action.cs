@@ -6,7 +6,7 @@ public class Action : Interactable {
 
     public override void Interact()
     {
-        Debug.Log("Break");
+        Debug.Log("Kill Enemy");
     }
 
 }
