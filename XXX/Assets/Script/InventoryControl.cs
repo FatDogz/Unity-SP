@@ -15,7 +15,7 @@ public class InventoryControl : MonoBehaviour {
         playerweaponcontrol = GetComponent<WeaponPlayerContrl>();
         List<BaseStats> swordStats = new List<BaseStats>();
         swordStats.Add(new BaseStats(10, "DMG", "Your damage level"));
-        sword = new Item(swordStats, "Sword 1");
+        sword = new Item(swordStats, "LSword");
 
     }
     void Update()

@@ -37,8 +37,17 @@ public class WeaponPlayerContrl : MonoBehaviour {
         equippedWeapon.Stats = itemToEquip.Stats;
         EquippedWeapon.transform.SetParent(playerhand.transform);
         characterStats.AddStatBonus(itemToEquip.Stats);
-        Debug.Log(equippedWeapon.Stats[0]);
+        Debug.Log(equippedWeapon.Stats[0].GetCalStatValue());
 
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            PerformWeaponAtt();
+        }
+      
     }
 
     public void PerformWeaponAtt()
